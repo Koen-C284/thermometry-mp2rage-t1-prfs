@@ -1,0 +1,7 @@
+numpy>=1.26
+scipy>=1.11
+nibabel>=5.2
+matplotlib>=3.8
+pytest>=8.0
+# only for in vivo motion correction (python python/s02_registration.py)
+itk-elastix>=0.20

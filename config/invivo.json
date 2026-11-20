@@ -1,0 +1,22 @@
+{
+  "_comment": "In vivo data are not distributed. Place each subject's stage s04/s05 outputs (temp_prfs.nii.gz, masks.nii.gz, signal_change_img1.nii.gz, signal_change_img2.nii.gz) in data/invivo/<subject>/.",
+  "data_dir": "data/invivo",
+  "output_dir": "results/invivo",
+  "reference_subject": "subject1",
+  "s05": {"baseline_dynamics": 75, "smoothing_sigma_px": 1.0, "apply_correction": true, "s0_fit": "fixed_r2star"},
+  "discard_dynamics": 6,
+  "baseline_dynamics": 75,
+  "dynamic_interval_s": 4.0,
+  "min_heating_c": 0.5,
+  "min_abs_r": 0.9,
+  "phases_s": {
+    "Baseline": [0, 300],
+    "Heating": [300, 900],
+    "Cooldown": [900, 1200]
+  },
+  "subjects": {
+    "subject1": {"voxels": [[36, 23], [34, 24], [21, 37], [24, 23]], "peak_window_s": [800, 900]},
+    "subject2": {"voxels": [[29, 50], [31, 34], [22, 39], [26, 19]], "peak_window_s": [800, 900]},
+    "subject3": {"voxels": [[34, 19], [22, 37], [30, 41]], "peak_window_s": [800, 900]}
+  }
+}

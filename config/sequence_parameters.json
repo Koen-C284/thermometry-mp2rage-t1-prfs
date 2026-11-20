@@ -1,0 +1,35 @@
+{
+  "_comment": "MP2RAGE timing used for the EPG dictionary (stage s03). Values were read once from the scanner logs/headers and are hard-coded here so that no scanner log files are needed. Times in ms, angles in degrees. TI2 = TI1 + inter-block delay.",
+  "invivo": {
+    "alpha1_deg": 12,
+    "alpha2_deg": 12,
+    "TR_ms": 25,
+    "TI1_ms": 1100,
+    "TI2_ms": 2900,
+    "MP2RAGE_TR_ms": 4000,
+    "PE_steps": 64,
+    "T2_ms": 25,
+    "number_of_repetitions": 5,
+    "inversion_efficiency": 1.0,
+    "rf_phase_increment_deg": 120,
+    "_source": "In vivo MP2RAGE protocol parameters used to generate the EPG dictionary for the paper."
+  },
+  "exvivo": {
+    "alpha1_deg": 10,
+    "alpha2_deg": 9,
+    "TR_ms": 33,
+    "TI1_ms": 800,
+    "TI2_ms": 2624.4,
+    "MP2RAGE_TR_ms": 4000,
+    "PE_steps": 96,
+    "T2_ms": 50,
+    "number_of_repetitions": 5,
+    "inversion_efficiency": 1.0,
+    "rf_phase_increment_deg": 120,
+    "_source": "Ex vivo scan log. Not used for the paper: no B1/T1 dictionary correction was applied ex vivo."
+  },
+  "dictionary_grid": {
+    "T1_ms": [600, 1600, 101],
+    "B1_scale": [0.65, 2.0, 151]
+  }
+}

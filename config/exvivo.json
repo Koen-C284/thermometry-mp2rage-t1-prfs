@@ -1,0 +1,20 @@
+{
+  "data_dir": "data/exvivo",
+  "output_dir": "results/exvivo",
+  "probe_file": "probe_temperatures.txt",
+  "s05": {"baseline_dynamics": 10, "smoothing_sigma_px": 0, "apply_correction": false, "s0_fit": "fixed_r2star"},
+  "discard_dynamics": 6,
+  "baseline_dynamics": 6,
+  "probe_voxels": {
+    "calibration": [51, 48],
+    "validation": [46, 40]
+  },
+  "filtered_sigma_px": 1.0,
+  "min_heating_c": 0.5,
+  "min_abs_r": 0.9,
+  "map_periods_s": {
+    "t = 0-100 s": [0, 100],
+    "t = 450-550 s": [450, 550],
+    "t = 900-1000 s": [900, 1000]
+  }
+}

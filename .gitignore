@@ -1,0 +1,20 @@
+# generated outputs
+results/
+**/derived_local/
+matlab/**/corrections/
+
+# in vivo data are never published
+data/invivo/
+
+# raw scanner data and logs must never be committed
+*.PAR
+*.par
+*.REC
+*.rec
+*.log
+*.xml
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
